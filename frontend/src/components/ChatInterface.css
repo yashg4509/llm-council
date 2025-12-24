@@ -42,13 +42,21 @@
   margin-bottom: 16px;
 }
 
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
 .message-label {
   font-size: 12px;
   font-weight: 600;
   color: #666;
-  margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  flex: 1;
 }
 
 .user-message .message-content {

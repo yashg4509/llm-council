@@ -10,12 +10,20 @@
   border: 1px solid #c8e6c8;
 }
 
+.final-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
 .chairman-label {
   color: #2d8a2d;
   font-size: 12px;
   font-family: monospace;
-  margin-bottom: 12px;
   font-weight: 600;
+  flex: 1;
 }
 
 .final-text {

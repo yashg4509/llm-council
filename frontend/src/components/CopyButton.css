@@ -1,0 +1,48 @@
+.copy-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background: #f5f5f5;
+  border-color: #999;
+  color: #333;
+}
+
+.copy-button:active {
+  transform: scale(0.95);
+}
+
+.copy-button svg {
+  flex-shrink: 0;
+}
+
+.copy-text {
+  display: inline-block;
+  min-width: 50px;
+  text-align: left;
+}
+
+/* Success state */
+.copy-button:has(svg polyline) {
+  background: #e8f5e9;
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+
+.copy-button:has(svg polyline):hover {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+
