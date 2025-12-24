@@ -62,18 +62,16 @@ export default function ChatInterface({
             <div key={index} className="message-group">
               {msg.role === 'user' ? (
                 <div className="user-message">
-                  <div className="message-header">
-                    <div className="message-label">You</div>
-                    <CopyButton 
-                      text={msg.content} 
-                      label="Copy your message"
-                    />
-                  </div>
+                  <div className="message-label">You</div>
                   <div className="message-content">
                     <div className="markdown-content">
                       <ReactMarkdown>{msg.content}</ReactMarkdown>
                     </div>
                   </div>
+                  <CopyButton 
+                    text={msg.content} 
+                    label="Copy message"
+                  />
                 </div>
               ) : (
                 <div className="assistant-message">
